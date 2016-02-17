@@ -1,5 +1,6 @@
-package serv;
+package serv.game;
 
+import serv.game.Player;
 import java.util.ArrayList;
 import javax.servlet.http.HttpSession;
 
@@ -11,7 +12,7 @@ public class GameSession {
 
     private static ArrayList<Player> players = new ArrayList<>();
 
-    static Player getPlayer(String name, HttpSession session) {
+    public static Player getPlayer(String name, HttpSession session) {
         Player player;
         if (session.getAttribute(name) == null) {
             player = new Player(name);

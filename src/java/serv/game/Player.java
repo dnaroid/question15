@@ -1,4 +1,4 @@
-package serv;
+package serv.game;
 
 import static java.lang.Math.random;
 
